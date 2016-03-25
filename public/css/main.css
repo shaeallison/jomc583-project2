@@ -22,7 +22,7 @@ p{
 
 body.container{
     width: 100%;
-    background-color: #824E62;
+    background-color: #402842;
     padding: 0px;
     margin: 0px;
     font-family: 'Raleway', sans-serif;
@@ -37,17 +37,17 @@ body.container{
 }
 
 .contact.table>tbody>tr:hover{
-    background-color: #603243;
+    background-color: #773277;
 }
 
 .contact.table.table-striped>tbody>tr:nth-of-type(odd):hover{
-    background-color: #603243;
+    background-color: #773277;
 }
 
 
 a.link{
     font-size: 20px;
-    color: white;
+    color: #BC51A4;
 }
 
 a.smalllink{
@@ -68,7 +68,7 @@ td.edit a.link{
 
 label{
     font-size: 20px;
-    color: white;
+    color: #BC51A4;
     letter-spacing: 1px;
 }
 
@@ -86,16 +86,16 @@ h3.link{
 
 h3.link a:hover{
     text-decoration: none;
-    color: #603243;
+    color: #BC51A4;
 }
 
 a.link:hover{
-    color: white;
+    color: #BC51A4;
     text-decoration: none;
 }
 
 .contact.table.table-striped>tbody>tr:nth-of-type(odd){
-    background-color: #794658;
+    background-color: #533656;
 }
 
 input.input{
@@ -110,7 +110,7 @@ input.input{
 }
 
 input.input:hover{
-    color:#794658;
+    color:#BC51A4;
 }
 
 input.input:active{
@@ -131,7 +131,23 @@ button.link{
 
 button.link:hover{
     text-align: center;
-    color: #603243;
+    color: #BC51A4;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+}
+
+img.logo{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+footer{
+    text-align: center;
+    padding-top: 20px;
+    color: #b2b2b2;
+}
+
+footer a{
+    color: #b2b2b2;
 }
