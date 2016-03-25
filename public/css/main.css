@@ -109,9 +109,6 @@ input.input{
     letter-spacing: 1px;
 }
 
-input.input:hover{
-    color:#BC51A4;
-}
 
 input.input:active{
     color:white;
