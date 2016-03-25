@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contacts</title>
+        <link href="/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    </head>
+    <body class="container">
+        <h3><%= user.name %></h3>
+        <p><a href="/users/delete/<%= user.name %>">Delete</a></p>
+        <form action="/users/<%= user.name %>" method="POST">
+
+            <p>
+            <label>Full Name</label>
+            <input type="text" id="name" name="name" value="<%= user.name %>" />
+            </p>
+
+            <p>
+            <label>Title</label>
+            <input type="text" id="title" name="title" value="<%= user.title %>" />
+            </p>
+
+            <p>
+            <label>Street Address</label>
+            <input type="text" id="address" name="address" value="<%= user.address %>" />
+            </p>
+            
+            <p>
+            <label>City</label>
+            <input type="text" id="city" name="city" value="<%= user.city %>" />
+            </p>
+            
+            <p>
+            <label>State</label>
+            <input type="text" id="state" name="state" value="<%= user.state %>" />
+            </p>
+            
+            <p>
+            <label>Zip</label>
+            <input type="text" id="zip" name="zip" value="<%= user.zip %>" />
+            </p>
+            
+            <p>
+            <label>Notes</label>
+            <input type="textfield" id="notes" name="notes" value="<%= user.notes %>" />
+            </p>
+
+            <button>Update</button>
+
+        </form>
+    </body>
+</html>

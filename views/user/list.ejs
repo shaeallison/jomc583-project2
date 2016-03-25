@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contacts</title>
+        <link href="./css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    </head>
+    <body class="container">
+        <h3>Contacts</h3>
+        <% if (users.length) { %>
+        <table class="table">
+            <% for (var i in users) { %>
+            <li><a href="/users/<%= users[i].name %>"><%= users[i].name %> - <%= users[i].title %></a></li>
+            <% } %>
+        </table>
+        <% } else { %>
+        <p>Sorry, there are no students yet.</p>
+        <% } %>
+
+        <p><a href="/user/new">New User</a></p>
+    </body>
+</html>
