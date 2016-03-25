@@ -3,20 +3,27 @@
     <head>
         <title>Contacts</title>
         <link href="./css/main.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     </head>
     <body class="container">
-        <h3>Contacts</h3>
+        <h2 class="light">Contacts</h2>
         <% if (users.length) { %>
-        <table class="table">
+        <table class="contact table table-striped">
             <% for (var i in users) { %>
-            <li><a href="/users/<%= users[i].name %>"><%= users[i].name %> - <%= users[i].title %></a></li>
+            <tr class="dark">
+                <td><a class="link" href="/users/<%= users[i].name %>"><%= users[i].name %></a>
+                <br/>
+                <a class="smalllink"><%= users[i].title %></a>
+                </td>
+                <td class="edit"><a class="link" href="/users/<%= users[i].name %>">Edit</a></td>
+            </tr>
             <% } %>
         </table>
         <% } else { %>
-        <p>Sorry, there are no students yet.</p>
+        <p>Sorry, there are no contacts yet. Add one below.</p>
         <% } %>
 
-        <p><a href="/user/new">New User</a></p>
+        <h3 class="link"><a href="/user/new">Create A New Contact</a></h3>
     </body>
 </html>

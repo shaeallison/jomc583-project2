@@ -1,23 +1,137 @@
+h2.light{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+p{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
 
 .container{
     display: block;
     margin: auto;
-    border: 2px solid #eeeeee;
     padding: 15px;
     margin-top: 20px;
 }
 
 body.container{
-    width: 90%;
+    width: 100%;
+    background-color: #824E62;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
-li{
-    list-style-type: none;
+.contact.table>tbody>tr>td{
     padding-top: 15px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #eeeeee;
+    border: none;
 }
 
-a{
+.contact.table>tbody>tr:hover{
+    background-color: #603243;
+}
+
+.contact.table.table-striped>tbody>tr:nth-of-type(odd):hover{
+    background-color: #603243;
+}
+
+
+a.link{
+    font-size: 20px;
+    color: white;
+}
+
+a.smalllink{
     font-size: 15px;
+    color: #B2B2B2;
+}
+
+a.smalllink:hover{
+    font-size: 15px;
+    color: #B2B2B2;
+    text-decoration: none;
+}
+
+td.edit a.link{
+    float:right;
+    padding-right: 10px;
+}
+
+label{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+h3.link a{
+    font-size: 20px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+
+h3.link{
+    text-align: center;
+}
+
+
+h3.link a:hover{
+    text-decoration: none;
+    color: #603243;
+}
+
+a.link:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.contact.table.table-striped>tbody>tr:nth-of-type(odd){
+    background-color: #794658;
+}
+
+input.input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+input.input:hover{
+    color:#794658;
+}
+
+input.input:active{
+    color:white;
+}
+
+button.link{
+    display: block;
+    margin: auto;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+button.link:hover{
+    text-align: center;
+    color: #603243;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }

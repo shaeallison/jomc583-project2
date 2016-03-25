@@ -3,50 +3,66 @@
     <head>
         <title>Contacts</title>
         <link href="/css/main.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     </head>
     <body class="container">
-        <h3><%= user.name %></h3>
-        <p><a href="/users/delete/<%= user.name %>">Delete</a></p>
+        <h2 class="light"><%= user.name %></h2>
+        <h3 class="link"><a href="/users/delete/<%= user.name %>">Delete Contact</a></h3>
         <form action="/users/<%= user.name %>" method="POST">
-
-            <p>
+        <table class="contact table table-striped">
+            <tr>
+            <td>
             <label>Full Name</label>
-            <input type="text" id="name" name="name" value="<%= user.name %>" />
-            </p>
+            <input class="input" type="text" id="name" name="name" value="<%= user.name %>" />
+            </td>
+            </tr>
 
-            <p>
+            <tr>
+            <td>
             <label>Title</label>
-            <input type="text" id="title" name="title" value="<%= user.title %>" />
-            </p>
+            <input class="input" type="text" id="title" name="title" value="<%= user.title %>" />
+            </td>
+            </tr>
 
-            <p>
+            <tr>
+            <td>
             <label>Street Address</label>
-            <input type="text" id="address" name="address" value="<%= user.address %>" />
-            </p>
+            <input class="input" type="text" id="address" name="address" value="<%= user.address %>" />
+            </td>
+            </tr>
             
-            <p>
+            <tr>
+            <td>
             <label>City</label>
-            <input type="text" id="city" name="city" value="<%= user.city %>" />
-            </p>
+            <input class="input" type="text" id="city" name="city" value="<%= user.city %>" />
+            </td>
+            </tr>
             
-            <p>
+            <tr>
+            <td>
             <label>State</label>
-            <input type="text" id="state" name="state" value="<%= user.state %>" />
-            </p>
+            <input class="input" type="text" id="state" name="state" value="<%= user.state %>" />
+            </td>
+            </tr>
             
-            <p>
+            <tr>
+            <td>
             <label>Zip</label>
-            <input type="text" id="zip" name="zip" value="<%= user.zip %>" />
-            </p>
+            <input class="input" type="text" id="zip" name="zip" value="<%= user.zip %>" />
+            </td>
+            </tr>
             
-            <p>
+            <tr>
+            <td>
             <label>Notes</label>
-            <input type="textfield" id="notes" name="notes" value="<%= user.notes %>" />
-            </p>
-
-            <button>Update</button>
-
+            <input class="input" type="textfield" id="notes" name="notes" value="<%= user.notes %>" />
+            </td>
+            </tr>
+            
+            </table>
+            <button class="link">Update Contact</button>
+    
         </form>
     </body>
 </html>
